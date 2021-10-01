@@ -24,6 +24,15 @@ ret=$?
 if [ $ret -ne 0 ]; then
 exit $ret
 fi
+if [ $ret -ne 0 ]; then
+exit $ret
+fi
+rm -rf target
+
+./gradlew build
+ret=$?
+if [ $ret -ne 0 ]; then
+exit $ret
 rm -rf target
 
 ./gradlew compileJava
