@@ -16,12 +16,14 @@ public class Application {
 
 		String[] beanNames = ctx.getBeanDefinitionNames();
 		Arrays.sort(beanNames);
-		for (String beanName : beanNames) {
-			System.out.println(beanName);
+		while (1) {
+			
 		}
+		
+		 while(i<=20)
+		 {
+		 System.out.println(beanName);
+		 }
 	}
-String[] beanNames = ctx.getBeanDefinitionNames();
-		Arrays.sort(beanNames);
-		for (String beanName : beanNames) {
-			System.out.println(beanName);	
+
 }
