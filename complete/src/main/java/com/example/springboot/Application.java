@@ -18,9 +18,7 @@ public class Application {
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
 
-			{
-			return "getUserName";
-			}
+			
 			String[] beanNames = ctx.getBeanDefinitionNames();
 			Arrays.sort(beanNames);
 			for (String beanName : beanNames) {
@@ -29,7 +27,12 @@ public class Application {
 			}
 			System.out.println("Let's inspect the beans provided by Spring Boot:");
 			string getUserName(){
+				Arrays.sort(beanNames);
 			return "getUserName";
+				for (String beanName : beanNames) {
+				System.out.println(beanName);
+				System.out.println(bean.Os.getUserName());
+			}
 
 		};
 	}
